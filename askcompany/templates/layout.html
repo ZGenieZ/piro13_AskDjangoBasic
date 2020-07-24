@@ -1,4 +1,4 @@
-{% load static %}
+{% load static fresh_static %}
 <!DOCTYPE html>
 <head>
   <meta charset="utf-8" />
@@ -9,7 +9,7 @@
     }
   </style>
   {% block extra_head %}
-  <link rel="stylesheet" href="{% static "main.css" %}" />
+  <link rel="stylesheet" href="{% fresh_static "main.css" %}" />
   {% endblock %}
 </head>
 <body>
