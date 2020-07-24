@@ -7,5 +7,6 @@
 <p>{{ item.desc }}</p>
 {% endif %}
 <hr />
-<a href="/shop/">목록으로</a>
+<a href="{% url "shop:item_list" %}">목록으로</a>
+<a href="{% url "shop:item_edit" item.pk %}">수정하기</a>
 {% endblock %}

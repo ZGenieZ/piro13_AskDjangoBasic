@@ -9,4 +9,6 @@ urlpatterns = [
     path('archives/<yyyy:year>/',views.archives_year,name='archives_year'),
     path('',views.item_list, name='item_list'),
     path('<int:pk>/',views.item_detail, name='item_detail'),
+    path('new/',views.item_new,name='item_new'),
+    path('<int:pk>/edit/',views.item_edit, name='item_edit'),
 ]
